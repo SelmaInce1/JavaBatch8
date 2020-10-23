@@ -1,24 +1,36 @@
 package com.syntax.homeworks;
 
-import java.util.Scanner;
+
 
 public class Q46 {
 
 	public static void main(String[] args) {
 		
-		Scanner inp;
-	    int x; 
-	    System.out.print("In:");
-	    
-	    inp=new Scanner(System.in);
-	    x=inp.nextInt();
-	    
-		for (int a=(x-1); a>=0; a--) {
-			System.out.print(a+" ");
-		}
+		for (int j=7; j>=1; j--){
+		      for (int k=1; k<=j; k++){
+		        System.out.print(k+" ");
+		      }
+		    System.out.println();
+		    }
+		      
+		     
 			
 	
-	}
+	
+		
+		
+	    for (int i=2; i<=7; i++) {
+	      for (int r=1; r<=i; r++){
+	         System.out.print(r+" ");
+	      }
+	      System.out.println();
+	      }
+	      
+	    
+	    
+	}   
+	    
+	    
+	  }   
 
 
-}
