@@ -1,5 +1,7 @@
 package com.syntax.class10;
 
+import java.util.Scanner;
+
 public class Task {
 
 	public static void main(String[] args) {
@@ -73,12 +75,28 @@ public class Task {
 		
 		System.out.println("-------HW3--------------");
 		
-		double[] doubles= {12.94,34.65,23.25,56.23,78.14};
-		double sumDouble=0;
-		for (int i=0; i<doubles.length; i++) {
-			sumDouble+=doubles[i];
+		Scanner scan;
+		double[]num;
+		double sum=0;
+		int size;
+		
+		scan=new Scanner(System.in);
+		System.out.println("how many numbers would you like to store?");
+		size=scan.nextInt();
+		
+		num=new double[size];
+		
+		
+		for (int i=0; i<size; i++) {
+			System.out.println("Please enter double values");
+			num[i]=scan.nextDouble();
 		}
-		System.out.println(sumDouble);
+		
+		
+		for (double number:num) {
+			sum+=number;
+		}
+		System.out.println(sum);
 		
 		
 		System.out.println("---------HW4------------");
@@ -88,14 +106,27 @@ public class Task {
 		
 		String[] countries= {"USA", "Germany", "Turkey", "Russia", "Greece"};
 		String[] capitals= {"Washington DC", "Berlin", "Ankara", "Moscow", "Athen"};
+		String capital;
 		
-		for (int i=0; i<countries.length; i++) {
-			System.out.println("The capital of "+countries[i]+" is "+capitals[i]);
+		
+		
+		
+		for (String country:countries) {
+			switch (country) {
+			case "USA":
+				capital="Washington Dc";
+				break;
+			case "Germany":
+				capital="Berlin";
+				break;
+			default:
+				capital="I dont know";
+			}
 		}
 		
 		
 		
-		
+		System.out.println("The capital of "+ country +" is "+ capital);
 		
 		
 		

@@ -6,31 +6,26 @@ public class Q46 {
 
 	public static void main(String[] args) {
 		
-		for (int j=7; j>=1; j--){
-		      for (int k=1; k<=j; k++){
-		        System.out.print(k+" ");
-		      }
-		    System.out.println();
-		    }
-		      
-		     
-			
+		double discount;
+		char code = 'C' ;
+		System.out.println(code);
+		switch ( code ) {
+		case 'A':
+		discount = 0.0;
+
+		case 'B':
+		discount = 0.1;
+
+		case 'C':
+		discount = 0.2;
+
+		default:
+		discount = 0.3;
+		}
 	
-	
-		
-		
-	    for (int i=2; i<=7; i++) {
-	      for (int r=1; r<=i; r++){
-	         System.out.print(r+" ");
-	      }
-	      System.out.println();
-	      }
-	      
-	    
-	    
+		System.out.println(discount);
 	}   
 	    
-	    
-	  }   
+}   
 
 
