@@ -126,7 +126,7 @@ public class Task {
 		
 		
 		
-		System.out.println("The capital of "+ country +" is "+ capital);
+		//System.out.println("The capital of "+ country +" is "+ capital);
 		
 		
 		

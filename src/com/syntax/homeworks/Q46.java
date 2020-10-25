@@ -5,27 +5,24 @@ package com.syntax.homeworks;
 public class Q46 {
 
 	public static void main(String[] args) {
-		
-		double discount;
-		char code = 'C' ;
-		System.out.println(code);
-		switch ( code ) {
-		case 'A':
-		discount = 0.0;
-
-		case 'B':
-		discount = 0.1;
-
-		case 'C':
-		discount = 0.2;
-
-		default:
-		discount = 0.3;
-		}
 	
-		System.out.println(discount);
-	}   
+		int largest=0;
+		int secondLargest=0;
+		int[] arr= {200, 10, 20, 8, -1, 77, 56,};
+		for(int i=0; i<arr.length;i++) {
+			if(arr[i]>largest) {
+			largest=arr[i];
+				
+			} else if(arr[i]>secondLargest) {
+				secondLargest=arr[i];
+				
+			}
+		}
+		System.out.println("The second largest number is "+secondLargest);
+		
+	
+	   
 	    
 }   
 
-
+}
